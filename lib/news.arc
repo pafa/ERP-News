@@ -1,13 +1,14 @@
 ; things to customize
 (declare 'atstrings t)
 
-(= this-site*    "My Forum"
-   site-url*     "http://news.yourdomain.com/"
-   parent-url*   "http://www.yourdomain.com"
+(= this-site*    "ERP News"
+   site-url*     "http://news.erp.im/"
+   parent-url*   "http://news.erp.im/"
    favicon-url*  ""
-   site-desc*    "What this site is about."               ; for rss feed
+   site-desc*    "ERP News For You Everyday."               ; for rss feed
    site-color*   (color 180 180 180)
    border-color* (color 180 180 180)
+   footer*	 "Powered by: <a target='_blank' href='http://erp.im'> ERP.im </a> | <a target='_blank' href='http://news.erp.im/rss'> RSS </a> | <a href='mailto:hi@@erp.im'> Email </a> | <a target='_blank' href='http://erp.im/about/'> About </a> | <a target='_blank' href='http://erp.im/blog/'> Weekly List </a> | <a target='_blank' href='http://eepurl.com/7g1IL'> Subscribe Weekly </a> <br><br> <a target='_blank' href='https://news.ycombinator.com/'> Hacker News </a> | <a target='_blank' href='https://github.com/arclanguage/anarki'> Arc </a> <br><br>"
    prefer-url*   t)
 
 ; these settings might improve performance when you need it
@@ -396,7 +397,13 @@
        (gen-css-url)
        (prn "<link rel=\"shortcut icon\" href=\"" favicon-url* "\">")
        (prn "<meta name=\"viewport\" content=\"width=device-width\">")
-       (tag script (pr votejs*))
+       (prn "<script type=\"text/javascript\">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-39939963-1', 'news.erp.im');
+  ga('send', 'pageview');</script>")
+	(tag script (pr votejs*))
        (tag title (pr ,title)))
      (tag body
        (center
@@ -425,6 +432,7 @@
                (color-stripe (main-color ,gu))
                (br)
                (center
+		(prn footer*)
                  (hook 'longfoot)
                  (admin-bar ,gu (- (msec) ,gt) ,whence)))))))
 
