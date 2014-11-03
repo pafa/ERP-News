@@ -4,7 +4,7 @@
 (= this-site*    "ERP News"
    site-url*     "http://news.erp.im/"
    parent-url*   "http://news.erp.im/"
-   favicon-url*  ""
+   favicon-url*  "http://news.erp.im/erp-news.png"
    site-desc*    "ERP News For You Everyday."               ; for rss feed
    site-color*   (color 180 180 180)
    border-color* (color 180 180 180)
