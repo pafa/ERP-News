@@ -221,7 +221,7 @@
     (++ (spurned* ip 0))))
 
 (def abusive-core (ip)
-  (and (only.> (requests/ip* ip) 350)
+  (and (only.> (requests/ip* ip) 999)
        (let now (seconds)
          (do1 (if (req-times* ip)
                 (and (>= (len req-times*.ip)
@@ -706,4 +706,3 @@ stdout, returns a url to redirect requests to after processing."
 ; Idea: make form fields that know their value type because of
 ; gensymed names, and so the receiving fn gets args that are not
 ; strings but parsed values.
-
