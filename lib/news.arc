@@ -395,7 +395,7 @@
   `(tag html
      (tag head
        (gen-css-url)
-       (prn "<link rel=\"shortcut icon\" href=\"http://www.srmbox.com/erp-news.png" favicon-url* "\">")
+       (prn "<link rel=\"shortcut icon\" href=\"http://news.erp.im/erp-news.png" favicon-url* "\">")
        (prn "<meta name=\"viewport\" content=\"width=device-width\">")
        (prn "<script type=\"text/javascript\">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
