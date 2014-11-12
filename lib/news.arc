@@ -515,12 +515,9 @@ a:visited { color:#828282; text-decoration:none; }
 pre { overflow: auto; padding: 2px; max-width:600px; }
 pre:hover {overflow:auto}
 
-@media (max-width: 480px) {
-  body { margin:0; font-size: 14px; width:480px; margin:2px auto;}
-  .title   { font-family:Verdana; font-size: 14px; color:#828282; }
-  .pagetop { font-family:Verdana; font-size: 16px; color:#222222; }
-  form textarea { width: 90%; }
-  body > center > table { width:100%;}
+@@media (max-width: 517px) {
+  body { margin:0; }
+  body > center > table { width:100%; }
   body > center > table > tbody  > tr:nth-child(1) > td > table td .pagetop b { display:block }
   body > center > table > tbody  > tr:nth-child(1) > td > table td .pagetop img { display:none }
 }"))
