@@ -6,8 +6,8 @@
    parent-url*   "http://news.erp.im/"
    favicon-url*  ""
    site-desc*    "ERP News For You Everyday."               ; for rss feed
-   site-color*   (color 180 180 180)
-   border-color* (color 180 180 180)
+   site-color*   (255,148,77)
+   border-color* (255,148,77)
    footer*	 "Powered by: <a target='_blank' href='http://erp.im'> ERP.im </a> | <a target='_blank' href='http://news.erp.im/rss'> RSS </a> | <a href='mailto:hi@@erp.im'> Email </a> | <a target='_blank' href='http://erp.im/about/'> About </a> | <a target='_blank' href='http://erp.im/blog/'> Weekly List </a> | <a target='_blank' href='http://eepurl.com/7g1IL'> Subscribe Weekly </a> <br><br> <a target='_blank' href='https://news.ycombinator.com/'> Hacker News </a> | <a target='_blank' href='https://github.com/arclanguage/anarki'> Arc </a> <br><br>"
    prefer-url*   t)
 
@@ -473,7 +473,7 @@
 
 (defop news.css req
   (pr "
-body  { font-family:'Helvetica Neue',Verdana; font-size:10pt; color:#828282;width:780px; margin:6px auto; }
+body  { font-family:'Helvetica Neue',Verdana; font-size:10pt; color:#828282;width:960px; margin:6px auto; }
 td    { font-family:'Helvetica Neue',Verdana; font-size:10pt; color:#828282; padding-left:3px; }
 
 .admin td   { font-family:Verdana; font-size:8.5pt; color:#000000; }
@@ -597,8 +597,8 @@ function vote(node) {
 (def gen-logo ()
   (tag (td style "width:18px;padding-right:4px")
     (tag (a href parent-url*)
-      (tag (img src logo-url* width 18 height 18
-                style "border:1px #@(hexrep border-color*) solid;")))))
+      (tag (img src logo-url* width 30 height 30
+                style "border:0px #@(hexrep border-color*) solid;")))))
 
 (= toplabels* '(nil "welcome" "new" "threads" "comments" "leaders" "*"))
 
