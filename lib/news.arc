@@ -598,7 +598,7 @@ function vote(node) {
   (tag (td style "width:18px;padding-right:4px")
     (tag (a href parent-url*)
       (tag (img src logo-url* width 30 height 30
-                style "border:0px #@(hexrep border-color*) solid;")))))
+                style "solid;")))))
 
 (= toplabels* '(nil "welcome" "new" "threads" "comments" "leaders" "*"))
 
