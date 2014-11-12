@@ -473,37 +473,24 @@
 
 (defop news.css req
   (pr "
-body  { font-family:'Helvetica Neue',Verdana; font-size:10pt; color:#828282;width:780px; margin:6px auto; }
-td    { font-family:'Helvetica Neue',Verdana; font-size:10pt; color:#828282; padding-left:3px;}
-
-@media screen and (max-width: 480px){
-        body {
-            background: #eaeaea;
-	    font-size: 16px;
-        }
-
-        table {
-            margin: 0;
-            width: 100%;
-	    font-size: 16px;
-        }
-    }
+body  { font-family:Verdana; font-size:10pt; color:#828282; }
+td    { font-family:Verdana; font-size:10pt; color:#828282; }
 
 .admin td   { font-family:Verdana; font-size:8.5pt; color:#000000; }
-.subtext td { font-family:Verdana; font-size:  8pt; color:#828282; }
+.subtext td { font-family:Verdana; font-size:  7pt; color:#828282; }
 
 input    { font-family:Courier; font-size:10pt; color:#000000; }
-input[type="submit"] { font-family:Verdana; }
+input[type=\"submit\"] { font-family:Verdana; }
 textarea { font-family:Courier; font-size:10pt; color:#000000; }
 
 a:link    { color:#000000; text-decoration:none; }
 a:visited { color:#828282; text-decoration:none; }
 
-.default { font-family:'Helvetica Neue',Verdana; font-size: 10pt; color:#828282; }
-.admin   { font-family:Verdana; font-size:  9pt; color:#000000; }
+.default { font-family:Verdana; font-size: 10pt; color:#828282; }
+.admin   { font-family:Verdana; font-size:8.5pt; color:#000000; }
 .title   { font-family:Verdana; font-size: 10pt; color:#828282; }
 .adtitle { font-family:Verdana; font-size:  9pt; color:#828282; }
-.subtext { font-family:Verdana; font-size:  8pt; color:#828282; padding-top: 4px; padding-bottom: 3px }
+.subtext { font-family:Verdana; font-size:  7pt; color:#828282; }
 .yclinks { font-family:Verdana; font-size:  8pt; color:#828282; }
 .pagetop { font-family:Verdana; font-size: 10pt; color:#222222; }
 .comhead { font-family:Verdana; font-size:  8pt; color:#828282; }
@@ -528,12 +515,9 @@ a:visited { color:#828282; text-decoration:none; }
 pre { overflow: auto; padding: 2px; max-width:600px; }
 pre:hover {overflow:auto}
 
-@media (max-width: 480px) {
-  body { margin:0; font-size: 14px; width:480px; margin:2px auto;}
-  .title   { font-family:Verdana; font-size: 14px; color:#828282; }
-  .pagetop { font-family:Verdana; font-size: 16px; color:#222222; }
-  form textarea { width: 90%; }
-  body > center > table { width:100%;}
+@@media (max-width: 517px) {
+  body { margin:0; }
+  body > center > table { width:100%; }
   body > center > table > tbody  > tr:nth-child(1) > td > table td .pagetop b { display:block }
   body > center > table > tbody  > tr:nth-child(1) > td > table td .pagetop img { display:none }
 }"))
