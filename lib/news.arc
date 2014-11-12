@@ -473,8 +473,8 @@
 
 (defop news.css req
   (pr "
-body  { font-family:Verdana; font-size:10pt; color:#828282; }
-td    { font-family:Verdana; font-size:10pt; color:#828282; }
+body  { font-family:'Helvetica Neue',Verdana; font-size:10pt; color:#828282;width:780px; margin:6px auto; }
+td    { font-family:'Helvetica Neue',Verdana; font-size:10pt; color:#828282; padding-left:3px; }
 
 .admin td   { font-family:Verdana; font-size:8.5pt; color:#000000; }
 .subtext td { font-family:Verdana; font-size:  7pt; color:#828282; }
