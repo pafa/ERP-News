@@ -8,7 +8,7 @@
    site-desc*    "ERP News For You Everyday."               ; for rss feed
    site-color*   (color 255 148 77)
    border-color* (color 255 148 77)
-   footer*	 "Powered by: <a target='_blank' href='http://erp.im'> ERP.im </a> | <a target='_blank' href='http://news.erp.im/rss'> RSS </a> | <a href='mailto:hi@@erp.im'> Email </a> | <a target='_blank' href='http://erp.im/about/'> About </a> | <a target='_blank' href='http://erp.im/blog/'> Weekly List </a> | <a target='_blank' href='http://eepurl.com/7g1IL'> Subscribe Weekly </a> <br><br> <a target='_blank' href='https://news.ycombinator.com/'> Hacker News </a> | <a target='_blank' href='https://github.com/arclanguage/anarki'> Arc </a> <br><br>"
+   footer*	 "Powered by: <a target='_blank' href='http://erp.im'> ERP.im </a> | <a target='_blank' href='http://news.erp.im/rss'> RSS </a> | <a href='mailto:hi@@erp.im'> Email </a> | <a target='_blank' href='http://news.erp.im/faq.html'> FAQ </a> | <a target='_blank' href='http://news.erp.im/wechat.html'> Wechat </a> | <a target='_blank' href='http://news.erp.im/bookmarklet.html'> Fast-Share </a> <br><br> <a target='_blank' href='https://news.ycombinator.com/'> Hacker News </a> | <a target='_blank' href='https://github.com/arclanguage/anarki'> Arc </a> <br><br>"
    prefer-url*   t)
 
 ; these settings might improve performance when you need it
