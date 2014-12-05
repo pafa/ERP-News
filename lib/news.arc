@@ -648,7 +648,7 @@ function vote(node) {
       (when-umatch/r user req
         (logout-user user)
         whence))
-    (onlink "login"
+    (onlink "login/Register"
       (login-page nil
                   (list (fn (u ip)
                           (ensure-news-user u)
