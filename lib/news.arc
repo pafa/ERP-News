@@ -1034,7 +1034,7 @@ function vote(node) {
 
 (def titlelink (s url user)
   (let toself (blank url)
-    (tag (a href (if toself
+    (tag (a href "_blank" (if toself
                       (item-url s!id)
                      (or (live s) (author user s) (editor user))
                       url)
